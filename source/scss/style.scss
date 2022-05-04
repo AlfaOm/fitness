@@ -1,0 +1,28 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+// @import "blocks/page-header.scss";
+// @import "blocks/button.scss";
+// @import "blocks/banner.scss";
+// @import "blocks/advantages.scss";
+// @import "blocks/about.scss";
+// @import "blocks/service.scss";
+// @import "blocks/feedback.scss";
+// @import "blocks/accordion.scss";
+// @import "blocks/page-footer.scss";
+// @import "blocks/modal.scss";
