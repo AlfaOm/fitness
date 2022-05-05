@@ -6,41 +6,47 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: $vp-1920 - 1) {
+// @mixin vp-1919 {
+//   @media (max-width: $vp-1920 - 1) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1439 {
+//   @media (max-width: $vp-1440 - 1) {
+//     @content;
+//   }
+// }
+
+// @mixin vp-1279 {
+//   @media (max-width: $vp-1280 - 1) {
+//     @content;
+//   }
+// }
+
+@mixin vp-1199 {
+  @media (max-width: $vp-1200 - 1) {
     @content;
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: $vp-1440 - 1) {
-    @content;
-  }
-}
+// @mixin vp-1023 {
+//   @media (max-width: $vp-1024 - 1) {
+//     @content;
+//   }
+// }
 
-@mixin vp-1279 {
-  @media (max-width: $vp-1280 - 1) {
-    @content;
-  }
-}
+// @mixin vp-770 {
+//   @media (max-width: $vp-771 - 1) {
+//     @content;
+//   }
+// }
 
-@mixin vp-1023 {
-  @media (max-width: $vp-1024 - 1) {
-    @content;
-  }
-}
-
-@mixin vp-770 {
-  @media (max-width: $vp-771 - 1) {
-    @content;
-  }
-}
-
-@mixin vp-769 {
-  @media (max-width: $vp-770 - 1) {
-    @content;
-  }
-}
+// @mixin vp-769 {
+//   @media (max-width: $vp-770 - 1) {
+//     @content;
+//   }
+// }
 
 @mixin vp-767 {
   @media (max-width: $vp-768 - 1) {
@@ -48,11 +54,11 @@
   }
 }
 
-@mixin vp-374 {
-  @media (max-width: $vp-375 - 1) {
-    @content;
-  }
-}
+// @mixin vp-374 {
+//   @media (max-width: $vp-375 - 1) {
+//     @content;
+//   }
+// }
 
 @mixin vp-320 {
   @media (max-width: $vp-321 - 1) {
