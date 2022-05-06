@@ -55,7 +55,7 @@
             <!-- 1x: 500x556px; 2x: 1000x1112px -->
             <source media="(min-width: 1200px)" srcset="img/promo-img-desk.webp 1x, img/promo-img-desk@2x.webp 2x"
               type="image/webp">
-            <img src="img/promo-img-desk.jpg" width="500" height="556" srcset="img/banner/banner-desktop@2x.jpg"
+            <img src="img/promo-img-desk.jpg" width="500" height="556" srcset="img/promo-img-desk@2x.jpg"
               alt="Фото спортсмена в тёмно-синей футболке с символом супермена на груди">
           </picture>
 
@@ -72,38 +72,117 @@
     </header>
     <main>
       <section class="about">
+        <h2 class="visually-hidden">О нашем фитнес центре</h2>
+        <div class="about__wrapper">
+          <div class="about__content-wrapper">
+            <div class="about__text-wrapper">
+              <h3>Тренажерный зал</h3>
+              <strong>Просторный зал площадью 900 кв/м</strong>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                тела
+                и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+                спортсменов.
+              </p>
+              <p>
+                В&nbsp;зале расположены отдельная зона для Crossfit&nbsp;и кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+            <picture>
+              <!-- 1x: 320x313px; 2x: 640x626px; -->
+              <source media="(max-width: 767px)" srcset="img/gym-hall-mob.webp 1x, img/gym-hall-mob@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 767px)" srcset="img/gym-hall-mob.jpg 1x, img/gym-hall-mob@2x.jpg 2x">
+              <!-- 1x: 678x345px; 2x: 1356x690px; -->
+              <source media="(max-width: 1199px)" srcset="img/gym-hall-tab.webp 1x, img/gym-hall-tab@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 1199px)" srcset="img/gym-hall-tab.jpg 1x, img/gym-hall-tab@2x.jpg 2x">
+              <!-- 1x: 600x401px; 2x: 1320x802px -->
+              <source media="(min-width: 1200px)" srcset="img/gym-hall-desk.webp 1x, img/gym-hall-desk.webp 2x"
+                type="image/webp">
+              <img src="img/gym-hall-desk.jpg" srcset="img/gym-hall-desk@2x.jpg" width="660" height="401"
+                alt="Фото тренажерного зала">
+            </picture>
+          </div>
 
+          <div class="about__video-wrapper">
+            <div class="video">
+              <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/preview-video-mob.webp 1x, img/preview-video-mob.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)"
+                    srcset="img/preview-video-mob.png 1x, img/preview-video-mob.png 2x">
+                  <source srcset="img/preview-video-desk.webp 1x, img/preview-video-desk.webp 2x" type="image/webp">
+                  <img class="video__media" src="img/preview-video-desk.png" width="364" height="228"
+                    alt="Превью видео с изображением тренажерного зала">
+                </picture>
+              </a>
+              <button class="video__button" aria-label="Запустить видео">
+                <!-- <svg width="100" height="100">
+                  <use xlink:href="img/sprite/sprite.svg#play-video"></use>
+                </svg> -->
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1867_4)" stroke-opacity="0.2"
+                    stroke-width="2" />
+                  <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1867_4)" />
+                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1867_4" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#ED0233" />
+                      <stop offset="1" stop-color="#003EB7" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_1867_4" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#003D85" />
+                      <stop offset="0.885417" stop-color="#B80027" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="season-tickets">
+        <h2>Абонементы</h2>
 
       </section>
 
       <article class="promo-action">
+        <h2 class="visually-hidden">Объявление о ежегодном соревновании</h2>
 
       </article>
 
       <section class="coaches">
+        <h2>Тренеры</h2>
 
       </section>
 
       <section class="advantages">
+        <h2>Наши преимущества</h2>
 
       </section>
 
       <section class="actions">
+        <h2>Акции</h2>
 
       </section>
 
       <section class="reviews">
+        <h2>Отзывы</h2>
 
       </section>
 
       <section class="feedback">
+        <h2>Бесплатное занятие</h2>
 
       </section>
 
       <section class="contacts">
+        <h2>Контакты</h2>
 
       </section>
 
