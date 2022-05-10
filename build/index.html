@@ -107,7 +107,7 @@
 
           <div class="about__video-wrapper">
             <div class="video">
-              <a class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+              <a tabindex="0" class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
                   <source media="(max-width: 767px)"
                     srcset="img/preview-video-mob.webp 1x, img/preview-video-mob.webp 2x" type="image/webp">
@@ -118,10 +118,10 @@
                     alt="Превью видео с изображением тренажерного зала">
                 </picture>
               </a>
-              <button class="video__button" aria-label="Запустить видео">
-                <!-- <svg width="100" height="100">
+              <!-- <button class="video__button" aria-label="Запустить видео">
+                <svg width="100" height="100">
                   <use xlink:href="img/sprite/sprite.svg#play-video"></use>
-                </svg> -->
+                </svg>
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1867_4)" stroke-opacity="0.2"
                     stroke-width="2" />
@@ -140,15 +140,92 @@
                     </linearGradient>
                   </defs>
                 </svg>
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
       </section>
 
-      <section class="season-tickets">
+      <section class="subscriptions">
+        <div class="container">
         <h2>Абонементы</h2>
+        <div class="subscriptions__tabs">
+          <ul class="subscriptions__list">
+            <li tabindex="0" class="subscriptions__item subscriptions__item--current">1 месяц</li>
+            <li tabindex="0" class="subscriptions__item">6 месяцев</li>
+            <li tabindex="0" class="subscriptions__item">12 месяцев</li>
+          </ul>
+        </div>
 
+        <div class="subscriptions__cards subscriptions__cards--show">
+          <ul>
+            <li>
+              <h3>С тренером</h3>
+              <span>12 занятий</span>
+              <p data-shadow="5000">5000</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <p data-shadow="1700">1700</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <p data-shadow="2700">2700</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscriptions__cards">
+          <ul>
+            <li>
+              <h3>С тренером</h3>
+              <span>72 занятия</span>
+              <p data-shadow="30000">30000</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <p data-shadow="10200">10200</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <p data-shadow="16200">16200</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscriptions__cards">
+          <ul>
+            <li>
+              <h3>С тренером</h3>
+              <span>144 занятия</span>
+              <p data-shadow="60000">60000</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Дневной</h3>
+              <span>с 8:00 до 17:00</span>
+              <p data-shadow="20400">20400</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+            <li>
+              <h3>Полный день</h3>
+              <span>с 8:00 до 22:00</span>
+              <p data-shadow="32400">32400</p>
+              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </section>
 
       <article class="promo-action">
