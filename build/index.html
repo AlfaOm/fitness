@@ -44,19 +44,22 @@
               </ul>
             </div>
             <p>Омск</p>
-            <a href="#season-ticket" class="page-header__button button">Купить абонемент</a>
+            <a href="#subscriptions" class="page-header__button button">Купить абонемент</a>
           </div>
 
           <picture>
+
             <!-- 1x: 324x390px; 2x: 648x780px; -->
             <source media="(max-width: 1199px)" srcset="img/promo-img-tab.webp 1x, img/promo-img-tab@2x.webp 2x"
               type="image/webp">
             <source media="(max-width: 1199px)" srcset="img/promo-img-tab.jpg 1x, img/promo-img-tab@2x.jpg 2x">
+
             <!-- 1x: 500x556px; 2x: 1000x1112px -->
             <source media="(min-width: 1200px)" srcset="img/promo-img-desk.webp 1x, img/promo-img-desk@2x.webp 2x"
               type="image/webp">
-            <img src="img/promo-img-desk.jpg" width="500" height="556" srcset="img/promo-img-desk@2x.jpg"
+            <img src="img/promo-img-desk.jpg" srcset="img/promo-img-desk@2x.jpg 2x" width="500" height="556"
               alt="Фото спортсмена в тёмно-синей футболке с символом супермена на груди">
+
           </picture>
 
           <div class="page-header__banner-social">
@@ -89,19 +92,23 @@
               </p>
             </div>
             <picture>
+
               <!-- 1x: 320x313px; 2x: 640x626px; -->
               <source media="(max-width: 767px)" srcset="img/gym-hall-mob.webp 1x, img/gym-hall-mob@2x.webp 2x"
                 type="image/webp">
               <source media="(max-width: 767px)" srcset="img/gym-hall-mob.jpg 1x, img/gym-hall-mob@2x.jpg 2x">
+
               <!-- 1x: 678x345px; 2x: 1356x690px; -->
               <source media="(max-width: 1199px)" srcset="img/gym-hall-tab.webp 1x, img/gym-hall-tab@2x.webp 2x"
                 type="image/webp">
               <source media="(max-width: 1199px)" srcset="img/gym-hall-tab.jpg 1x, img/gym-hall-tab@2x.jpg 2x">
+
               <!-- 1x: 600x401px; 2x: 1320x802px -->
               <source media="(min-width: 1200px)" srcset="img/gym-hall-desk.webp 1x, img/gym-hall-desk.webp 2x"
                 type="image/webp">
-              <img src="img/gym-hall-desk.jpg" srcset="img/gym-hall-desk@2x.jpg" width="660" height="401"
+              <img src="img/gym-hall-desk.jpg" srcset="img/gym-hall-desk@2x.jpg 2x" width="660" height="401"
                 alt="Фото тренажерного зала">
+
             </picture>
           </div>
 
@@ -109,13 +116,18 @@
             <div class="video">
               <a tabindex="0" class="video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                 <picture>
+
+                  <!-- 1x: 320x167px; 2x: 640x334px -->
                   <source media="(max-width: 767px)"
                     srcset="img/preview-video-mob.webp 1x, img/preview-video-mob.webp 2x" type="image/webp">
                   <source media="(max-width: 767px)"
                     srcset="img/preview-video-mob.png 1x, img/preview-video-mob.png 2x">
+
+                  <!-- 1x: 364x228px; 2x: 728x456px -->
                   <source srcset="img/preview-video-desk.webp 1x, img/preview-video-desk.webp 2x" type="image/webp">
-                  <img class="video__media" src="img/preview-video-desk.png" width="364" height="228"
-                    alt="Превью видео с изображением тренажерного зала">
+                  <img class="video__media" src="img/preview-video-desk.png" srcset="img/preview-video-desk@2x.jpg 2x"
+                    width="364" height="228" alt="Превью видео с изображением тренажерного зала">
+
                 </picture>
               </a>
               <!-- <button class="video__button" aria-label="Запустить видео">
@@ -146,91 +158,124 @@
         </div>
       </section>
 
-      <section class="subscriptions">
+      <section id="subscriptions" class="subscriptions">
         <div class="container">
-        <h2>Абонементы</h2>
-        <div class="subscriptions__tabs">
-          <ul class="subscriptions__list">
-            <li tabindex="0" class="subscriptions__item subscriptions__item--current">1 месяц</li>
-            <li tabindex="0" class="subscriptions__item">6 месяцев</li>
-            <li tabindex="0" class="subscriptions__item">12 месяцев</li>
-          </ul>
-        </div>
+          <h2>Абонементы</h2>
+          <div class="subscriptions__tabs">
+            <ul class="subscriptions__list">
+              <li tabindex="0" class="subscriptions__item subscriptions__item--current">1 месяц</li>
+              <li tabindex="0" class="subscriptions__item">6 месяцев</li>
+              <li tabindex="0" class="subscriptions__item">12 месяцев</li>
+            </ul>
+          </div>
 
-        <div class="subscriptions__cards subscriptions__cards--show">
-          <ul>
-            <li>
-              <h3>С тренером</h3>
-              <span>12 занятий</span>
-              <p data-shadow="5000">5000</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <p data-shadow="1700">1700</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Полный день</h3>
-              <span>с 8:00 до 22:00</span>
-              <p data-shadow="2700">2700</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-          </ul>
-        </div>
+          <div class="subscriptions__cards subscriptions__cards--show">
+            <ul>
+              <li>
+                <h3>С тренером</h3>
+                <span>12 занятий</span>
+                <p data-shadow="5000">5000</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p data-shadow="1700">1700</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p data-shadow="2700">2700</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="subscriptions__cards">
-          <ul>
-            <li>
-              <h3>С тренером</h3>
-              <span>72 занятия</span>
-              <p data-shadow="30000">30000</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <p data-shadow="10200">10200</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Полный день</h3>
-              <span>с 8:00 до 22:00</span>
-              <p data-shadow="16200">16200</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-          </ul>
-        </div>
+          <div class="subscriptions__cards">
+            <ul>
+              <li>
+                <h3>С тренером</h3>
+                <span>72 занятия</span>
+                <p data-shadow="30000">30000</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p data-shadow="10200">10200</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p data-shadow="16200">16200</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="subscriptions__cards">
-          <ul>
-            <li>
-              <h3>С тренером</h3>
-              <span>144 занятия</span>
-              <p data-shadow="60000">60000</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Дневной</h3>
-              <span>с 8:00 до 17:00</span>
-              <p data-shadow="20400">20400</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-            <li>
-              <h3>Полный день</h3>
-              <span>с 8:00 до 22:00</span>
-              <p data-shadow="32400">32400</p>
-              <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
-            </li>
-          </ul>
+          <div class="subscriptions__cards">
+            <ul>
+              <li>
+                <h3>С тренером</h3>
+                <span>144 занятия</span>
+                <p data-shadow="60000">60000</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Дневной</h3>
+                <span>с 8:00 до 17:00</span>
+                <p data-shadow="20400">20400</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+              <li>
+                <h3>Полный день</h3>
+                <span>с 8:00 до 22:00</span>
+                <p data-shadow="32400">32400</p>
+                <a href="#" class="subscriptions__cards-button button">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
       </section>
 
-      <article class="promo-action">
-        <h2 class="visually-hidden">Объявление о ежегодном соревновании</h2>
+      <article class="promo-event">
+        <div class="promo-event__wrapper container">
+          <div class="promo-event__info">
+            <div class="promo-event__info-top">
+              <h2>Super Games</h2>
+              <div class="promo-event__date">
+                <p>Дата <time datetime="2019-03-07">7 <span>Марта<br> 2019</span></time></p>
+                <p>Время <time datetime="2019-03-07T12:00">12:00</time></p>
+              </div>
+            </div>
+            <div class="promo-event__info-bottom">
+              <strong>Ежегодные соревнования по CrossFit</strong>
+              <a href="#" class="promo-event__button button">Заполнить заявку</a>
+            </div>
+          </div>
 
+          <picture>
+
+            <!-- 1x: 290x292px; 2x: 580x584px; -->
+            <source media="(max-width: 767px)" srcset="img/application-mob.webp 1x, img/application-mob@2x.webp 2x"
+              type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/application-mob.jpg 1x, img/application-mob@2x.jpg 2x">
+
+            <!-- 1x: 386x292px; 2x: 772x584px; -->
+            <source media="(max-width: 1199px)" srcset="img/application-tab.webp 1x, img/application-tab@2x.webp 2x"
+              type="image/webp">
+            <source media="(max-width: 1199px)" srcset="img/application-tab.jpg 1x, img/application-tab@2x.jpg 2x">
+
+            <!-- 1x: 600x500px; 2x: 1320x1000px -->
+            <source media="(min-width: 1200px)" srcset="img/application-desk.webp 1x, img/application-desk.webp 2x"
+              type="image/webp">
+            <img src="img/application-desk.jpg" srcset="img/application-desk@2x.jpg 2x" width="660" height="500"
+              alt="Фотография спортсмена на синем фоне, окруженного белой пылью, взмывшей в разные стороны от удара его руки по полу">
+
+          </picture>
+        </div>
       </article>
 
       <section class="coaches">
