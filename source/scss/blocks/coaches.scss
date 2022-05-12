@@ -1,0 +1,380 @@
+.coaches {
+  padding-top: 58px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 49px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+
+.coaches h2 {
+  margin: 0 0 52px 2px;
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin-bottom: 41px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 43px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coaches__wrapper {
+  position: relative;
+}
+
+.coaches__wrapper-inner {
+  @include vp-1199 {
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
+  @include vp-767 {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+.coaches__swiper {
+  // margin-left: auto;
+  // margin-right: auto;
+  position: relative;
+  // overflow: hidden;
+  // list-style: none;
+  // padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+.coaches__wrapper-swiper {
+  &--nojs .coaches__slide {
+    margin-right: 40px;
+    width: 260px;
+
+    @include vp-1199 {
+      margin-right: 30px;
+      width: 268px;
+    }
+
+    @include vp-767 {
+      margin-right: 15px;
+      width: 226px;
+    }
+  }
+}
+
+.coaches__slide {
+  background-color: $color-spindle;
+  height: 294px;
+  color: #111;
+  font-size: 16px;
+
+  @include vp-767 {
+    height: 274px;
+  }
+}
+
+// .coaches__swiper-wrapper {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+//   display: flex;
+//   transition-property: transform;
+//   // box-sizing: content-box;
+
+//   &--nojs {
+//     column-gap: 40px;
+
+//     @include vp-1199 {
+//       padding-right: 40px;
+//       padding-left: 40px;
+//       column-gap: 30px;
+//     }
+//   }
+// }
+
+// .coaches__swiper-slide {
+//   // flex-shrink: 0;
+//   // width: 100%;
+//   height: 100%;
+//   position: relative;
+//   transition-property: transform;
+//   min-width: 260px;
+
+//   @include vp-1199 {
+//     min-width: 268px;
+//   }
+
+//   @include vp-767 {
+//     width: 100%;;
+//   }
+// }
+
+// .coaches ul {
+//   margin: 0;
+//   // padding: 0;
+//   // display: flex;
+//   // justify-content: space-between;
+//   // column-gap: 40px;
+//   list-style: none;
+// }
+
+.coaches__slide:hover .coaches__card-info,
+.coaches__slide:focus-within .coaches__card-info {
+  display: block;
+}
+
+.coaches__slide:hover h3,
+.coaches__slide:focus-within h3 {
+  top: 52px;
+  z-index: 2;
+
+  @include vp-1199 {
+    left: 48%;
+  }
+
+  @include vp-767 {
+    top: 42px;
+    left: 50%;
+  }
+}
+
+.coaches__slide h3 {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  // width: 150px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: $color-default-white;
+  text-align: center;
+
+  @include vp-1199 {
+    left: 51%;
+  }
+}
+
+.coaches__slide img {
+  // width: 260px;
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 268px;
+    width: 100%;
+    height: 294px;
+    object-fit: contain;
+  }
+
+  @include vp-767 {
+    // width: 226px;
+    width: 100%;
+    height: 274px;
+    object-fit: contain;
+  }
+}
+
+.coaches__card-info {
+  display: none;
+  position: absolute;
+  // padding: 58px 35px;
+  padding: 35px;
+  top: 0;
+  left: 0;
+  right: 0;
+  // width: 260px;
+  width: 100%;
+  height: 294px;
+  background-color: $color-sapphire;
+  opacity: 0.89;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include vp-1199 {
+    // width: 268px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 35px 14px;
+  }
+}
+
+.coaches__card-info p {
+  margin: 41px 0 35px;
+  color: $color-spindle;
+  text-align: center;
+
+  @include vp-1199 {
+    margin-left: -8px;
+  }
+
+  @include vp-767 {
+    margin-top: 31px;
+    margin-left: 0;
+  }
+}
+
+.coaches__card-info ul {
+  display: block;
+  margin-left: -4px;
+  // width: 160px;
+  list-style: disc;
+}
+
+.coaches__card-info li {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+}
+
+// .coaches__button {
+//   border: none;
+// }
+
+// .coaches__button--prev::after,
+// .coaches__button--next::after {
+//   content: "";
+//   position: absolute;
+//   top: -50%;
+//   width: 16px;
+//   height: 32px;
+//   background-color: red;
+
+//   &--prev::after {
+//     left: 0;
+//   }
+
+//   &--next::after {
+//     right: 0;
+//   }
+// }
+
+// .swiper-button-prev,
+// .swiper-button-next {
+// 	background-color: #fff;
+// 	width: 40px;
+// 	height: 40px;
+// 	border-radius: 100%;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: 20px 20px;
+// }
+
+// .swiper-button-prev::after,
+// .swiper-button-next::after {
+// 	display: none;
+// }
+
+.coaches__button--prev,
+.coaches__button--next {
+  position: absolute;
+  top: 57.5%;
+  width: 20px;
+  height: 42px;
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 42px;
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+
+    @include vp-767 {
+      width: 20px;
+      height: 42px;
+      background-image: url("../img/svg/arrow-small.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-whisper;
+  }
+}
+
+.coaches__button--prev {
+  left: -38px;
+  right: auto;
+  margin-left: auto;
+
+  @include vp-1279 {
+    left: -7px;
+  }
+
+  @include vp-1199 {
+    top: 55%;
+    left: 42px;
+  }
+
+  @include vp-767 {
+    top: 55%;
+    left: 9px;
+  }
+
+  &::after {
+    top: -4px;
+    right: 0;
+    transform: rotate(180deg);
+
+    @include vp-767 {
+      top: -10px;
+      left: -3px;
+    }
+  }
+}
+.coaches__button--next {
+  right: -38px;
+  left: auto;
+  margin-right: auto;
+
+  @include vp-1279 {
+    right: -7px;
+  }
+
+  @include vp-1199 {
+    top: 55%;
+    right: 44px;
+  }
+
+  @include vp-767 {
+    top: 55%;
+    right: 9px;
+  }
+
+  &::after {
+    top: 4px;
+    left: 3px;
+
+    @include vp-767 {
+      top: 10px;
+    }
+  }
+}
