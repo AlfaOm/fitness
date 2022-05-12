@@ -12,6 +12,9 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
+const webpackStream = require("webpack-stream");
+const webpackConfig = require("./webpack.config.js");
+
 // Styles
 
 const styles = () => {
@@ -40,8 +43,10 @@ const html = () => {
 const scripts = () => {
   return gulp
     .src("source/js/*.js")
+    .pipe(webpackStream(webpackConfig))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
+
 };
 
 exports.scripts = scripts;
@@ -139,7 +144,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("source/scss/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/js/*.js", gulp.series(scripts, reload));
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
