@@ -5,7 +5,7 @@ const noJs = document.querySelector(".coaches__wrapper-swiper");
 noJs.classList.remove("coaches__wrapper-swiper--nojs");
 
 export const switchSwiper = () => {
-  const mySwiper = new Swiper(".swiper", {
+  const mySwiper = new Swiper(".swiper1", {
     slidesPerView: 4,
     spaceBetween: 40,
     slidersPerGroup: 1,
@@ -13,8 +13,8 @@ export const switchSwiper = () => {
     loop: true,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next1",
+      prevEl: ".swiper-button-prev1",
     },
 
     breakpoints: {
