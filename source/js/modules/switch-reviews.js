@@ -1,10 +1,18 @@
-  // $(document).ready(function() {
-  //   let position = 0;
-  //   const slidesToShow = 4;
-  //   const slidesToScroll= 1;
-  //   const swiperContainer = document.querySelector(".swiper-container");
-  //   const swiperTrack = document.querySelector(".swiper-track");
-  //   const swiperSlide = document.querySelector(".swiper-slide");
-  //   const buttonPrev = document.querySelector(".swiper-buttons__prev");
-  //   const buttonNext = document.querySelector(".swiper-buttons__next");
-  // })
+import "../vendor/swiper";
+
+// const noJs = document.querySelector(".reviews__wrapper-swiper");
+
+// noJs.classList.remove("reviews__wrapper-swiper--nojs");
+
+export const switchSwiperReviews = () => {
+  const mySwiper = new Swiper(".swiper2", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    slidersPerGroup: 1,
+
+    navigation: {
+      nextEl: ".swiper-button-next2",
+      prevEl: ".swiper-button-prev2",
+    },
+  });
+};

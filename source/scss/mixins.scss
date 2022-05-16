@@ -60,6 +60,13 @@
 //   }
 // }
 
+@mixin vp-350 {
+  @media (min-width: $vp-351 - 1) {
+    @content;
+  }
+}
+
+
 @mixin vp-320 {
   @media (max-width: $vp-321 - 1) {
     @content;
