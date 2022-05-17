@@ -75,7 +75,7 @@
 .advantages li {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content: flex-start;
   column-gap: 30px;
 
   @include vp-767 {
@@ -188,12 +188,13 @@
   &:nth-child(5n + 3) {
     position: relative;
     margin-top: 18px;
+    margin-bottom: 5px;
     margin-left: -3px;
     padding: 35px 35px;
     flex-direction: column;
     grid-area: t;
     width: 240px;
-    height: 307px;
+    min-height: 307px;
     // flex-direction: row-reverse;
     align-items: center;
     text-align: center;
@@ -205,7 +206,7 @@
       padding: 38px;
       left: 4px;
       width: 442px;
-      height: 239px;
+      min-height: 239px;
 
       & p {
         width: 172px;
@@ -233,7 +234,7 @@
       }
 
       @include vp-767 {
-        margin-top: -1px;
+        margin-top: -8px;
         margin-bottom: 4px;
       }
     }
