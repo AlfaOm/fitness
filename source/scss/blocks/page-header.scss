@@ -107,6 +107,7 @@
 .page-header__banner-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   margin-top: 108px;
 
   @include vp-1199 {
@@ -142,6 +143,11 @@
   position: relative;
   margin-bottom: 56px;
 
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // align-items: flex-end;
+
   @include vp-1199 {
     margin-bottom: 40px;
   }
@@ -163,6 +169,8 @@
   text-align: right;
   text-transform: uppercase;
 
+  text-shadow: 0px 3px $color-default-white;
+
   @include vp-1199 {
     margin: 0 29px 0 27px;
     font-size: 86px;
@@ -183,6 +191,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: nowrap;
+  // left: -23%;
+  // top: 46.5%;
 
   @include vp-1199 {
     left: 0;

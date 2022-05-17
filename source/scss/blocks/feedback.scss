@@ -1,0 +1,108 @@
+.feedback {
+  position: relative;
+  padding-top: 61px;
+  padding-right: 170px;
+  padding-bottom: 68px;
+
+  @include vp-1199 {
+    padding: 69px 118px 67px 88px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -45px;
+      right: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: $color-sapphire;
+      z-index: -1;
+
+      @include vp-767 {
+        left: -15px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.feedback h2 {
+  margin: 0 0 32px 0;
+  font-family: $ff-bebas-neue;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.feedback__input-wrapper {
+  margin-left: -2px;
+  margin-bottom: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+
+  @include vp-1199 {
+    margin-bottom: 29px;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
+    flex-direction: column;
+    row-gap: 31px;
+  }
+}
+
+.feedback__input-wrapper input {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 190px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $light-slate-grey;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.feedback__button {
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+}

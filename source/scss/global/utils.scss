@@ -34,6 +34,15 @@
   clip-path: inset(100%);
 }
 
+.wrapper-feedback-contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .scroll-lock {
   overflow: hidden;
 }
