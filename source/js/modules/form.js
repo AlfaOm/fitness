@@ -17,7 +17,6 @@ export const validateInput = () => {
     inputName.reportValidity();
   });
 
-  // +7 (123) 456 7890
 
   inputPhone.addEventListener("input", () => {
     const valueLength = inputPhone.value.length;
