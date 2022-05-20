@@ -89,9 +89,6 @@
 .page-header__banner img {
   margin-top: -3px;
   object-fit: cover;
-  // min-width: 200px;
-  // max-width: 500px;
-  // max-height: 556px;
 
   @include vp-1199 {
     margin-top: 17px;
@@ -143,11 +140,6 @@
   position: relative;
   margin-bottom: 56px;
 
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  // align-items: flex-end;
-
   @include vp-1199 {
     margin-bottom: 40px;
   }
@@ -192,12 +184,6 @@
   padding: 0;
   list-style: none;
 
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: nowrap;
-  // left: -23%;
-  // top: 46.5%;
-
   @include vp-1199 {
     left: 0;
     bottom: 17px;
@@ -220,7 +206,6 @@
   margin-top: auto;
   margin-left: auto;
   margin-right: -5px;
-  // padding-bottom: 21px;
   padding-bottom: 26px;
 
   @include vp-1199 {
@@ -234,7 +219,6 @@
 }
 
 .page-header__banner-social li {
-  // margin-bottom: 20px;
   margin-bottom: 13px;
   text-align: right;
 }

@@ -177,8 +177,6 @@
     grid-area: p;
 
     @include vp-1199 {
-      // margin-left: 2px;
-
       & p {
         padding-right: 5px;
       }
@@ -195,7 +193,6 @@
     grid-area: t;
     width: 240px;
     min-height: 307px;
-    // flex-direction: row-reverse;
     align-items: center;
     text-align: center;
     color: $color-default-white;
