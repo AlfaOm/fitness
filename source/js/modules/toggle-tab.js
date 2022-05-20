@@ -13,7 +13,6 @@ export const toggleTab = () => {
     });
   });
 };
-// toggleTab();
 
 function hideTab() {
   tab.forEach((item) => {
@@ -28,7 +27,6 @@ const toggleKeyTab = () => {
 tab.forEach(function (tab, i) {
   tab.addEventListener("keydown", function (evt) {
     if (evt.key === "Enter") {
-      // evt.preventDefault();
       hideTab();
       tab.classList.add("subscriptions__item--current");
       content[i].classList.add("subscriptions__cards--show");

@@ -1,9 +1,5 @@
 import "../vendor/swiper";
 
-// const noJs = document.querySelector(".reviews__wrapper-swiper");
-
-// noJs.classList.remove("reviews__wrapper-swiper--nojs");
-
 export const switchSwiperReviews = () => {
   const mySwiper = new Swiper(".swiper2", {
     slidesPerView: 1,
