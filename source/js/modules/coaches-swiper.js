@@ -22,9 +22,21 @@ export const switchSwiper = () => {
         slidesPerView: 4,
         spaceBetween: 40,
       },
+      1000: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      850: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+      },
+      550: {
+        slidesPerView: 2,
+        spaceBetween: 15,
       },
       320: {
         slidesPerView: 1,

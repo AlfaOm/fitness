@@ -259,7 +259,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 50%;
+      // top: 50%;
+      bottom: 153px;
       width: 340px;
       height: 2px;
       background-color: $color-crimson;

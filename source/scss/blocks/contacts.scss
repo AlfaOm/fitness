@@ -72,13 +72,15 @@
     top: 6px;
     left: 50.5%;
     width: 1px;
-    height: 102px;
+    // height: 102px;
+    height: 77%;
     background-color: $light-slate-grey;
 
     @include vp-1199 {
       top: 8px;
       left: 266px;
-      height: 129px;
+      // height: 129px;
+      height: 80%;
     }
 
     @include vp-767 {

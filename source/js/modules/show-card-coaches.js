@@ -18,25 +18,27 @@ function myCoolFunction() {
     ) {
       coachesCardInfo[i].classList.add("coaches__card-info--tab-show");
 
-      headingSlide[i].style.bottom = "";
-      headingSlide[i].style.top = "52px";
-      headingSlide[i].style.zIndex = 2;
-      headingSlide[i].style.left = "48%";
+      headingSlide[i].style.display = "none";
+      // headingSlide[i].style.bottom = "";
+      // headingSlide[i].style.top = "52px";
+      // headingSlide[i].style.zIndex = 2;
+      // headingSlide[i].style.left = "48%";
 
-      if (windowInnerWidth <= MOB_WIDTH) {
-        headingSlide[i].style.top = "42px";
-        headingSlide[i].style.zIndex = 2;
-        headingSlide[i].style.left = "50%";
-      }
+      // if (windowInnerWidth <= MOB_WIDTH) {
+      //   headingSlide[i].style.top = "42px";
+      //   headingSlide[i].style.zIndex = 2;
+      //   headingSlide[i].style.left = "50%";
+      // }
     } else if (
       windowInnerWidth < DESKTOP_WIDTH &&
       coachesCardInfo[i].classList.contains("coaches__card-info--tab-show")
     ) {
       coachesCardInfo[i].classList.remove("coaches__card-info--tab-show");
 
-      headingSlide[i].style.top = "";
-      headingSlide[i].style.bottom = "22px";
-      headingSlide[i].style.left = "50%";
+      headingSlide[i].style.display = "block";
+      // headingSlide[i].style.top = "";
+      // headingSlide[i].style.bottom = "22px";
+      // headingSlide[i].style.left = "50%";
     }
   }
 }
