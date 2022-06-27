@@ -94,8 +94,6 @@
 .coaches__slide:hover h3,
 .coaches__slide:focus-within h3 {
   @include vp-1200 {
-    // top: 52px;
-    // z-index: 2;
     display: none;
   }
 }
@@ -126,13 +124,11 @@
     width: 268px;
     width: 100%;
     height: 294px;
-    // object-fit: contain;
   }
 
   @include vp-767 {
     width: 100%;
     height: 274px;
-    // object-fit: contain;
   }
 }
 
@@ -200,7 +196,6 @@
   }
 
   @include vp-767 {
-    // margin-top: 31px;
     margin-left: 0;
   }
 }
